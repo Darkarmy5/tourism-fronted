@@ -17,131 +17,136 @@
             <h2>Dream Discover</h1>
         </div>
         <nav>
-            <a href="#">Home</a>
+            <a href="../homepage.html">Home</a>
             <a href="#">Booking</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
+            <a href="../aboutus.html">About us</a>
+            <a href="../contacts.html">Contact us</a>
         </nav>
         <div class=bell>
             <img src="./images/bell.png" class="bells">
             <div class="person">
-                <img src="./images/KMJ.jpg" class=kmj>
+                <img src="./images/security-user 1.png">
             </div>
         </div>
     </header>
     <div class="secure">
         <h2>Secure your reservation</h1>
     </div>
-    <div class="container">
-        <div class=room>
+    <form>
+        <div class="container">
+            <div class=room>
+                <div class=head>
+                    <div class=security>
+                        <img src="./images/security-user 1.png">
+                    </div>
+                    <h3>Personal information</h3>
+                    <h4>make a reservation</h4>
+                </div>
+                <div class=x>
+                    <div class=name1>
+                        <label for="first_name">First name</label>
+                        <input type="text" name="first_name" id="first" required>
+                    </div>
+                    <div class=name2>
+                        <label for="last_name">Last name</label>
+                        <input type="text" name="last_name" id="last" required>
+                    </div>
+                </div>
+                <div class=y>
+                    <div class=code>
+                        <label for="code">Mobile number</label>
+                        <input type="text" name="code" id="code" required placeholder="+250">
+                    </div>
+                    <div class=number>
+                        <input type="text" name="mobile_number" id="number" required>
+                    </div>
+                </div>
+                <div class=email>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class=alerts>
+                    <input type="checkbox" name="checkbox" id="check">
+                    <h5>Receive text alerts about this trip</h4>
+                </div>
+            </div>
+        </div>
+        <div class="book">
             <div class=head>
-                <div class=security>
-                    <img src="./images/security-user 1.png">
-                </div>
-                <h3>Room 1</h3>
-                <h4>2 people, 2 double bed and 1 twin bed,Non-smoking</h4>
+                <h4>Details</h4>
             </div>
-            <div class=x>
-                <div class=name1>
-                    <label for="first_name">First name</label>
-                    <input type="text" name="first_name" id="first" required>
+            <div class=city>
+                <div class=dep>
+                    <label for="city">Departure City</label>
+                    <input type="text" name="departure" id="depart" required>
                 </div>
-                <div class=name2>
-                    <label for="last_name">Last name</label>
-                    <input type="text" name="last_name" id="last" required>
+                <div class=arr>
+                    <label for="city">Arrival City</label>
+                    <input type="text" name="arrival" id="arrive" required>
                 </div>
             </div>
-            <div class=y>
-                <div class=code>
-                    <label for="code">Mobile number</label>
-                    <input type="text" name="code" id="code" required placeholder="+250">
+            <div class=dat>
+                <div class=in>
+                    <label for="checkin">Checkin Date</label>
+                    <input type="text" name="checkin" id="in" required>
                 </div>
-                <div class=number>
-                    <input type="text" name="mobile_number" id="number" required>
+                <div class=out>
+                    <label for="checkout">Checkout Date</label>
+                    <input type="text" name="checkout" id="out" required>
                 </div>
             </div>
-            <div class=email>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" required>
+            <div class=other>
+                <div class=guest>
+                    <label for="gueset">Guests</label>
+                    <input type="text" name="guest" id="guest" required>
+                </div>
+                <div class=activity>
+                    <label for="activity">Activity</label>
+                    <input type="text" name="activity" id="activity" required>
+                </div>
             </div>
-            <div class=alerts>
-                <input type="checkbox" name="checkbox" id="check">
-                <h5>Receive text alerts about this trip</h4>
+            <div class=currentp>
+                <label for="preferences">Current preferences</label>
+                <input type="text" name="preferences" id="pref" required>
             </div>
-        </div>
-    </div>
-    <div class="book">
-        <div class=head>
-            <h4>Details</h4>
-        </div>
-        <div class=city>
-            <div class=dep>
-                <label for="city">Departure City</label>
-                <input type="text" name="departure" id="depart" required>
+            <div class=special>
+                <label for="requests">Special requests</label>
+                <input type="text" name="requests" id="req" required>
             </div>
-            <div class=arr>
-                <label for="city">Arrival City</label>
-                <input type="text" name="arrival" id="arrive" required>
+            <div class=hotel>
+                <label for="hotel">Hotel reservation</label><br>
+                <input type="radio" name="hotel" id="hotel" value="Yes" required>Yes<br>
+                <input type="radio" name="hotel" id="hotel" value="No" required>No<br>
             </div>
-        </div>
-        <div class=dat>
-            <div class=in>
-                <label for="checkin">Checkin Date</label>
-                <input type="text" name="checkin" id="in" required>
-            </div>
-            <div class=out>
-                <label for="checkout">Checkout Date</label>
-                <input type="text" name="checkout" id="out" required>
+            <div class=flight>
+                <label for="flight">Flight reservation</label><br>
+                <input type="radio" name="flight" id="flight" value="Yes" required>Yes<br>
+                <input type="radio" name="flight" id="flight" value="No" required>No<br>
             </div>
         </div>
-        <div class=other>
-            <div class=guest>
-                <label for="gueset">Guests</label>
-                <input type="text" name="guest" id="guest" required>
-            </div>
-            <div class=activity>
-                <label for="activity">Activity</label>
-                <input type="text" name="activity" id="activity" required>
-            </div>
-        </div>
-        <div class=currentp>
-            <label for="preferences">Current preferences</label>
-            <input type="text" name="preferences" id="pref" required>
-        </div>
-        <div class=special>
-            <label for="requests">Special requests</label>
-            <input type="text" name="requests" id="req" required>
-        </div>
-        <div class=hotel>
-            <label for="hotel">Hotel reservation</label><br>
-            <input type="radio" name="hotel" id="hotel" value="Yes" required>Yes<br>
-            <input type="radio" name="hotel" id="hotel" value="No" required>No<br>
-        </div>
-        <div class=flight>
-            <label for="flight">Flight reservation</label><br>
-            <input type="radio" name="flight" id="flight" value="Yes" required>Yes<br>
-            <input type="radio" name="flight" id="flight" value="No" required>No<br>
-        </div>
-    </div>
 
-    <div class=info>
-        <div class=head>
-            <h4>Important information about your booking</h4>
-        </div>
-        <h5>1. This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit to
-            use for a future stay.<br>2. Stay extensions will require a new reservation.<br>3. Front desk staff will
-            greet guests on arrival.<br>4. No refunds will be issued for late check-in or early check-out.</h4>
-            <h6>By clicking the button below, I acknowledge that I have reviewed the <a href="#">Privacy Statement</a>
-                and have<br> reviewd and accept the <a href=#>Rules and Restrictions</a> and <a href=#>Terms of Use</a>
-        </h5>
-        <button>Complete booking</button>
-        <div class=a>
-            <img src="./images/lock-circle 1.png">
-            <h7>We use secure transmission and encrypted storage to protect your personal information</h6>
-        </div>
-    </div>
+        <div class=info>
+            <div class=head>
+                <h4>Important information about your booking</h4>
+            </div>
+            <h5>1. This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit
+                to
+                use for a future stay.<br>2. Stay extensions will require a new reservation.<br>3. Front desk staff will
+                greet guests on arrival.<br>4. No refunds will be issued for late check-in or early check-out.</h4>
+                <h6>By clicking the button below, I acknowledge that I have reviewed the <a href="#">Privacy
+                        Statement</a>
+                    and have<br> reviewd and accept the <a href=#>Rules and Restrictions</a> and <a href=#>Terms of
+                        Use</a>
+            </h5>
 
+            <button><input type="submit" value="Complete booking"></button>
+            <div class=a>
+                <img src="./images/lock-circle 1.png">
+                <h7>We use secure transmission and encrypted storage to protect your personal information</h6>
+            </div>
+        </div>
 
+    </form>
 
 
 
@@ -150,7 +155,7 @@
     <div class="footer">
         <div class="foot1">
             <div class="foot">
-                <img src="Icons/Plane-green.png">
+                <img src="images/Plane-green.png">
                 <h4>Dream Discover</h4>
             </div>
 
@@ -178,7 +183,7 @@
                 <li>Italy</li>
                 <li>Greece</li>
                 <li>Maldives</li>
-                <li>Switzeland</li>
+                <li>Switzerland</li>
                 <li><a href="#">See more</a></li>
             </ul>
 
@@ -189,7 +194,7 @@
             <ul type="none">
                 <li>Privacy Policy</li>
                 <li>Terms of use</li>
-                <li>Accesibility</li>
+                <li>Accessibility</li>
             </ul>
 
         </div>

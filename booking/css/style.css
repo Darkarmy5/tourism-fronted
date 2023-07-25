@@ -433,6 +433,13 @@ button{
     margin-bottom: 20px;
 }
 
+input[type="submit"] {
+    background: #008000;
+    color: white;
+    border: none;
+
+}
+
 
 
 
@@ -448,6 +455,11 @@ button{
 }
 .foot{
     display: flex;
+}
+
+.foot img{
+    width: 20px;
+    height: 20px;
 }
 
 .foot h4{
