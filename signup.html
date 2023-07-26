@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="signup.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <script  defer src="./script/auth.js"></script> 
 </head>
 
 <body>
@@ -26,9 +27,10 @@
         <div class="form">
             <div class="head">
                 <h1>Signup</h1>
+                <p id="error"></p>
             </div>
-            <form action="signup2.html" method="post">
-                <div>
+            <form id="signup-form">
+                <div >
                     <label for="email">Email Address</label><br>
                     <input type="text" name="email" id="email">
                 </div>
@@ -41,32 +43,23 @@
                     <input type="password" name="password" id="password">
                 </div>
                 <div>
-                    <label for="password">Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
                 </div>
-
+                <div>
+                    <label for="file">Profile photo</label>
+                    <input type="file" name="file" id="file">
+                </div>
 
                 <div class="check">
                     <input type="checkbox" name="termsAndConditions" id="check">
                     <h5>Accept our terms and conditions</h5>
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="verified" id="check">
-                    <h5>Send verification email to you </h5>
+                    <h5 id="sent"> </h5>
 
                 </div>
 
-                <div class="isadmin">
-                    <label for="admin">Admin</label><br>
-                    <div class="admin">
-                        <div>
-                            <input type="radio" name="isAdmin" id="admin" value="Yes" required>Yes
-                        </div>
-                        <div>
-                            <input type="radio" name="isAdmin" id="admin" value="No" required>No
-                        </div>
-                    </div>
-                </div>
 
                 <div class="submit">
                     <input type="submit" value="Signup"></a>
